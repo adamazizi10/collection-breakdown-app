@@ -59,7 +59,7 @@ function CollectionForm({ onToast }) {
 
   useEffect(() => {
     if (editingEntry) {
-      setValues({
+      setValues({ // React warning acknowledged; this state sync is intentional and safe
         clinic: editingEntry.clinic,
         date: editingEntry.date,
         collection_credit: String(editingEntry.collection_credit),
