@@ -1,0 +1,288 @@
+:root {
+  color: #0f172a;
+}
+
+#root {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+  text-align: left;
+}
+
+.collection-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.collection-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.collection-title {
+  font-size: 2.2rem;
+  margin: 0;
+}
+
+.collection-subtitle {
+  margin: 0;
+  color: #475569;
+}
+
+.collection-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.08);
+}
+
+.collection-form-editing {
+  border-color: #28a744;
+}
+
+.form-editing-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #28a744;
+}
+
+.form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.form-row {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-row-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.form-row-three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.form-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.required-indicator {
+  color: #dc2626;
+  margin-left: 0.15rem;
+}
+
+.form-field input {
+  border-radius: 10px;
+  border: 1px solid #d7e0f2;
+  padding: 0.65rem 0.85rem;
+  font-size: 0.95rem;
+  background-color: #fff;
+  color: #0f172a;
+}
+
+.form-field input:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-color: #2563eb;
+}
+
+.amount-input {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: stretch;
+  border-radius: 10px;
+  border: 1px solid #d7e0f2;
+  overflow: hidden;
+  background: #fff;
+}
+
+.amount-input:focus-within {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+  border-color: #2563eb;
+}
+
+.amount-input input {
+  border: none;
+  border-radius: 0;
+}
+
+.amount-input input:focus {
+  outline: none;
+}
+
+
+.amount-prefix {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0.75rem;
+  background: #f1f5f9;
+  color: #475569;
+  font-weight: 600;
+  border-right: 1px solid #d7e0f2;
+}
+
+.field-error {
+  font-size: 0.85rem;
+  color: #dc2626;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.form-actions-centered {
+  justify-content: center;
+}
+
+.primary-button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.65rem 1.6rem;
+  font-weight: 600;
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.primary-button:hover {
+  background: #1d4ed8;
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.primary-button-lg {
+  min-width: 200px;
+  font-size: 1rem;
+  padding: 0.8rem 2rem;
+}
+
+.secondary-button {
+  border: 1px solid #cbd5f5;
+  border-radius: 12px;
+  padding: 0.65rem 1.4rem;
+  font-weight: 600;
+  background: #ffffff;
+  color: #1f2937;
+}
+
+.secondary-button:hover {
+  border-color: #94a3b8;
+}
+
+.edit-button {
+  border-color: #28a744;
+  background: #28a744;
+  color: #ffffff;
+}
+
+.edit-button:hover {
+  border-color: #218838;
+  background: #218838;
+  color: #ffffff;
+}
+
+.primary-button-update {
+  background: #28a744;
+}
+
+.primary-button-update:hover {
+  background: #218838;
+}
+
+.collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.collection-list-title {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #1f2937;
+}
+
+.collection-table-wrapper {
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.06);
+  overflow: hidden;
+}
+
+.collection-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.collection-table th,
+.collection-table td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.collection-table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #64748b;
+  background: #f8fafc;
+}
+
+.collection-table tbody tr {
+  border-top: 1px solid #e2e8f0;
+}
+
+.collection-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.collection-table-action {
+  text-align: right;
+}
+
+.collection-empty-row td {
+  text-align: center;
+  color: #64748b;
+  padding: 1.5rem 1rem;
+}
+
+@media (max-width: 900px) {
+  #root {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .form-row-two,
+  .form-row-three {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-table th,
+  .collection-table td {
+    padding: 0.75rem 0.85rem;
+  }
+}
